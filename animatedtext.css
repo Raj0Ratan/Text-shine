@@ -1,0 +1,37 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: black;
+}
+.text {
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50% , -50%);
+	font-size: 30px;
+	font-weight: 700px;
+	font-family: "Poppins" ,sans-serif;
+	white-space: nowrap;
+	padding: 12px 48px;
+	background: linear-gradient(
+	to right,
+	#4d4d4d 0,
+	#00d5ff 10%,
+	#fff 14%,
+	#4d4d4d 25%
+	);
+	background-position: 0;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: ji 1.5s infinite forwards;
+	-webkit-text-size-adjust: none;
+}
+	@-webkit-keyframes ji{
+		0%{
+			background-position: 0;
+		}
+		100%{
+			background-position: 310px;
+		}
+}
